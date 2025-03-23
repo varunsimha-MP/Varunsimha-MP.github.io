@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/png" href="./assets/devops.svg" />
+  </head>
+  <body>
+    <div class="training-scrollbar" id="trainingBar"></div>
+
+    <div id="training-metrics">
+      <div>Epoch 100</div>
+      <div class="metric" id="progress-text"></div>
+      <div class="metric" id="eta-text"></div>
+    </div>
+    <nav id="desktop-nav">
+      <div class="logo">Varunsimha M P</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Varunsimha M P</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <!-- <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+          <li>
+            <a href="#achievements" onclick="toggleMenu()">Achievements</a>
+          </li> -->
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Varunsimha profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Varunsimha M P</h1>
+        <p class="section__text__p2">Cloud & Server Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Varunsimha_Cloud_Engineer_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <a href="#contact"
+            ><button class="btn btn-color-1">Contact Info</button></a
+          >
+        </div>
+        <div id="socials-container">
+          <a
+            href="https://www.linkedin.com/in/varunsimha-m-p-2a90591b5/"
+            target="_blank"
+          >
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+          <a href="https://github.com/varunsimha-MP" target="_blank">
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1.9+ years <br />Cloud & Server Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Bachelors Degree in<br/>Computer Science and Engineering
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              A Dynamic Cloud & Server Engineer with 1.9+ years of experience in cloud infrastructure, hybrid cloud, automation, system 
+administration, and troubleshooting. Proficient in AWS, Linux (RHEL, CentOS, Ubuntu), Azure, Windows Server, Docker, 
+Ansible, Terraform and CI/CD pipelines (Jenkins, GitHub Actions). Expertise in cloud security, auto-scaling architecture, 
+server virtualization, and infrastructure optimization. Proven track record in managing customer queries, providing 
+exceptional service, and solving complex technical issues efficiently. Excellent communicator with strong time 
+management skills, committed to continuous learning and professional growth. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Cloud & Server Engineer</h2>
+            <p class="experience-company-title">Stratogent Technology Service</p>
+            <p class="experience-year-text">April 2024 - Present</p>
+            <div class="article-container">
+              <!-- <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Large Language Models</h3>
+                  <p>Experienced</p>
+                </div>
+              </article> -->
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS Cloud</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Terraform And Ansible</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git & Github Actions</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kubernetes</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linux</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Azure Cloud</h3>
+                  <p>Intermediate</p>
+                </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Windows</h3>
+                    <p>Intermediate</p>
+                  </div>
+               
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>VCenter</h3>
+                  <p>Intermediate</p>
+                </div>
+             
+            </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Analytics</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">
+              Trainee System Engineer
+            </h2>
+            <p class="experience-company-title">Stratogent Technology Service</p>
+            <p class="experience-year-text">July 2023 - Mar 2024</p>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS Cloud</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Azure Cloud</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linux</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Windows</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <h1 class="title">Skills</h1>
+      <div class="text">
+        Below is a summary of my technical and analytical skills, tools, and
+        libraries that I work with in my professional journey.
+      </div>
+
+      <!-- Technical Skills -->
+      <div class="skills-category">
+        <h3>Technical Skills</h3>
+        <div class="cells">
+          <div class="cell">
+            <img src="./assets/aws.png" alt="aws logo" />
+            <span>AWS Cloud</span>
+          </div>
+          <!-- <div class="cell">
+            <img src="./assets/java.png" alt="java logo" />
+            <span>Java</span>
+          </div> -->
+          <div class="cell">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/265px-Tux.svg.png" alt="Linux" />
+            <span>Linux</span>
+          </div>
+          <div class="cell">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/800px-Microsoft_Azure.svg.png" alt="Azure" />
+            <span>Azure Cloud</span>
+          </div>
+          <div class="cell">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Windows_logo_and_wordmark_-_2021.svg/1920px-Windows_logo_and_wordmark_-_2021.svg.png" alt="Azure" />
+            <span>Windows</span>
+          </div>
+          <!-- <div class="cell">
+            <img src="./assets/mongo.png" alt="mongodb logo" />
+            <span>MongoDB</span>
+          </div> -->
+          <!-- <div class="cell">
+            <img src="./assets/restapi.png" alt="rest api logo" />
+            <span>RESTful API</span>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- Libraries -->
+      <div class="skills-category">
+        <h3>Cloud & Infrastructure Services</h3>
+        <div class="cells">
+          <div class="cell">
+            <img src="https://www.svgrepo.com/show/448268/aws-ec2.svg" alt="Ec2 logo" />
+            <span>EC2</span>
+          </div>
+          <div class="cell">
+            <img src="./assets/aws-s3.svg" alt="s3 logo" />
+            <span>Amazon S3</span>
+          </div>
+          <div class="cell">
+            <img src="https://www.svgrepo.com/show/353454/aws-iam.svg" alt="IAM logo" />
+            <span>AWS IAM</span>
+          </div>
+          <div class="cell">
+            <img
+              src="https://www.svgrepo.com/show/448267/aws-lambda.svg"
+              alt="Lambda logo"
+            />
+            <span>AWS Lambda</span>
+          </div>
+          <div class="cell">
+            <img src="./assets/docker.png" alt="docker logo" />
+            <span>Docker</span>
+          </div>
+          <div class="cell">
+            <img
+              src="./assets/aws-vpc.png"
+              alt="vpc logo"
+            />
+            <span>AWS VPC</span>
+          </div>
+          <div class="cell">
+            <img src="./assets/aws-route53.png" alt="aws-route53 logo" />
+            <span>Amazon Route53</span>
+          </div>
+          <div class="cell">
+            <img src="./assets/aws-cloudwatch.png" alt="cloudwatch logo" />
+            <span>Amazon Cloudwatch</span>
+          </div>
+          <div class="cell">
+            <img src="./assets/aws-ecr.svg" alt="ecr logo" />
+            <span>AWS ECR</span>
+          </div>
+          <div class="cell">
+            <img src="./assets/aws-eks.jpg" alt="eks logo" />
+            <span>AWS EKS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>DevOps Tools</h3>
+        <div class="cells">
+          <div class="cell">
+            <img src="./assets/git.png" alt="git logo" />
+            <span>Git & GitHub</span>
+          </div>
+          <div class="cell">
+            <img src="./assets/docker.png" alt="jenkins logo" />
+            <span>Docker</span>
+          </div>
+          <div class="cell">
+            <img src="https://www.svgrepo.com/show/373699/jenkins.svg" alt="jenkins logo" />
+            <span>Jenkins</span>
+          </div>
+          <div class="cell">
+            <img src="https://www.svgrepo.com/show/376353/terraform.svg" alt="Terraform logo" />
+            <span>Terraform</span>
+          </div>
+          <div class="cell">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/926px-Kubernetes_logo_without_workmark.svg.png" alt="K8s logo" />
+            <span>Kubernetes</span>
+          </div>
+          <div class="cell">
+            <img src="https://static-00.iconduck.com/assets.00/prometheus-icon-511x512-1vmxbcxr.png" alt="Prometheus logo" />
+            <span>Prometheus</span>
+          </div>
+          <div class="cell">
+            <img src="https://w7.pngwing.com/pngs/434/923/png-transparent-grafana-hd-logo-thumbnail.png" alt="Grafana logo" />
+            <span>Grafana</span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Analytical Skills -->
+      <div class="skills-category">
+        <h3>Analytical Skills</h3>
+        <div class="container">
+          <p>
+            Data cleaning, preparation, and visualization, extracting insights
+            and identifying trends from complex datasets.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <!-- div class="skills-category">
+        <h3>Tools</h3>
+        <div class="cells">
+          <!-- <div class="cell">
+            <img src="./assets/ollama.png" alt="ollama logo" />
+            <span>Ollama</span>
+          </div> -->
+          <!-- <div class="cell">
+            <img src="./assets/flask.png" alt="flask logo" />
+            <span>Flask</span>
+          </div> -->
+          <!-- div class="cell">
+            <img src="./assets/git.png" alt="git logo" />
+            <span>Git & GitHub</span>
+          </div>
+          <div class="cell">
+            <img src="./assets/docker.png" alt="docker logo" />
+            <span>Docker</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Math Skills -->
+
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      /> -->
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="p-title">Projects</h1>
+
+      <!-- <div class="top-nav">
+        <ul class="nav-list">
+          <li><a href="#category0" class="btn2 p-btn-color-2">All</a></li>
+          <li>
+            <a href="#category1" class="btn2 btn-color-2 project-btn"
+              >Machine learning</a
+            >
+          </li>
+          <li>
+            <a href="#category2" class="btn2 btn-color-2 project-btn"
+              >Deep learning</a
+            >
+          </li>
+          <li>
+            <a href="#category3" class="btn2 btn-color-2 project-btn"
+              >Reinforcement learning</a
+            >
+          </li>
+          <li>
+            <a href="#category4" class="btn2 btn-color-2 project-btn"
+              >Data Science</a
+            >
+          </li>
+          <li>
+            <a href="#category5" class="btn2 btn-color-2 project-btn"
+              >Data Analysis</a
+            >
+          </li>
+          <li>
+            <a href="#category6" class="btn2 btn-color-2 project-btn">AI</a>
+          </li>
+          <li>
+            <a href="#category7" class="btn2 btn-color-2 project-btn"
+              >Built from scratch</a
+            >
+          </li>
+          <li>
+            <a href="#category8" class="btn2 btn-color-2 project-btn"
+              >Electronics</a
+            >
+          </li>
+          <li>
+            <a href="#category9" class="btn2 btn-color-2 project-btn"
+              >visualization</a
+            >
+          </li>
+          <li>
+            <a href="#category9" class="btn2 btn-color-2 project-btn"
+              >Research paper</a
+            >
+          </li>
+
+        </ul>
+      </div> -->
+
+      <!-- Projects Section -->
+      <div class="experience-details-container2">
+        <!-- Project One -->
+        <div class="details-container2 color-container">
+          <div class="article-container">
+            <img
+              src="./assets/Jenkins.jpg"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Automated-and-Scalable-CI-CD-Pipeline-for-Serverless-Django-Application-on-AWS Public
+          </h2>
+          <div class="btn-container">
+            <button
+              class="btn project-btn"
+              onclick="openFullscreenModal('modal1')"
+            >
+              View Details
+            </button>
+            <!-- <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com//ML-algorithm-from-Scratch'"
+            >
+              Github
+            </button> -->
+            <!-- <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+
+        <!-- Modal for Project One -->
+        <div id="modal1" class="fullscreen-modal">
+          <div class="fullscreen-modal-content">
+            <span class="close" onclick="closeFullscreenModal('modal1')"
+              >&times;</span
+            >
+            <div class="modal-body">
+              <h1>Automated-and-Scalable-CI-CD-Pipeline-for-Serverless-Django-Application-on-AWS Public</h1>
+              <p>
+                This architecture represents a automated and scalable CI/CD pipeline for a Django application on AWS using rolling updates for seamless deployments. The process begins with a developer pushing code from VS Code to GitHub, which triggers Jenkins on an EC2 instance to automate the build and deployment workflow. Jenkins pulls the latest code, builds a Docker image, and pushes it to Amazon Elastic Container Registry (ECR). AWS ECS (Fargate) then pulls the updated image and deploys it within containers running Django on port 8000, dynamically managed by an Application Load Balancer (ALB), which routes HTTP (80) traffic securely to HTTPS (443). The application interacts with an Amazon RDS database, with logs centrally monitored via CloudWatch. Route 53 manages domain resolution, ensuring seamless traffic distribution. Rolling updates are used with a minimum of 100% running tasks and a maximum of 200% to guarantee zero downtime. This setup enables automated deployments, high availability, and scalability, ensuring a secure, efficient, and fully optimized DevOps pipeline with minimal manual intervention.
+              </p>
+              <img
+                src="./assets/Jenkins.jpg"
+                alt="Project 1"
+                class="modal-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Two -->
+        <div class="details-container2 color-container">
+          <div class="article-container project">
+            <img
+              src="./assets/terraform.jpg"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Building-Scalable-AWS-Architecture-with-Terraform-Automation
+          </h2>
+          <div class="btn-container">
+            <button
+              class="btn project-btn"
+              onclick="openFullscreenModal('modal2')"
+            >
+              View Details
+            </button>
+            <!-- <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Rakesh-Deshalli-Ravi/AI-Driven-Data-Visualization-App'"
+            >
+              Github
+            </button> -->
+            <!-- <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+
+        <!-- Modal for Project Two -->
+        <div id="modal2" class="fullscreen-modal">
+          <div class="fullscreen-modal-content">
+            <span class="close" onclick="closeFullscreenModal('modal2')"
+              >&times;</span
+            >
+            <div class="modal-body">
+              <h1>Building-Scalable-AWS-Architecture-with-Terraform-Automation</h1>
+              <p>
+                Designed and automated a highly available and scalable AWS architecture using Terraform, incorporating VPCs, subnets, EC2 instances, RDS databases, ALB, Route 53, and IAM security controls. Implemented modular Terraform configurations for efficient infrastructure management, ensuring security, scalability, and automation. Leveraged multi-AZ RDS for high availability, ALB for traffic distribution, and Route 53 for DNS routing, reducing manual effort and improving consistency. This project reinforced the power of Infrastructure as Code (IaC) in streamlining cloud deployments and enhancing AWS resource management.
+              </p>
+              <img
+                src="./assets/terraform.jpg"
+                alt="Project 2"
+                class="modal-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="details-container2 color-container">
+          <div class="article-container project">
+            <img
+              src="./assets/web.png"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            A-Secure-Multi-Tier-Web-Application-Architecture-on-AWS
+          </h2>
+          <div class="btn-container">
+            <button
+              class="btn project-btn"
+              onclick="openFullscreenModal('modal3')"
+            >
+              View Details
+            </button>
+            <!-- <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Rakesh-Deshalli-Ravi/Buzz-Feeds-AI-Content-Summarization'"
+            >
+              Github
+            </button> -->
+            <!-- <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+
+        <!-- Modal for Project Two -->
+        <div id="modal3" class="fullscreen-modal">
+          <div class="fullscreen-modal-content">
+            <span class="close" onclick="closeFullscreenModal('modal3')"
+              >&times;</span
+            >
+            <div class="modal-body">
+              <h1>A-Secure-Multi-Tier-Web-Application-Architecture-on-AWS              </h1>
+              <p>
+                The architecture ensures secure and efficient operations by maintaining a strict separation between public and private resources. It leverages key AWS services such as Amazon RDS for reliable database management, S3 with VPC endpoints for secure data storage, and ACM for SSL certification to enhance security. Amazon Route 53 is ensuring reliable domain name resolution and traffic routing. VPC peering enables seamless and secure communication across AWS regions, while a NAT Gateway in the private subnet ensures controlled internet access for updates and external communications without exposing private instances. An Elastic Load Balancer (ELB) ensures efficient traffic distribution and availability. Automation is implemented using AWS Lambda and Event Bridge, enabling cost optimization by powering instances on and off during non-business hours.
+
+This project represents a robust, scalable, and cost-effective solution for deploying secure web applications. The architecture is future-ready, with provisions for advanced features such as auto-scaling, ensuring it can adapt to growing business demands while maintaining optimal security and performance.
+              </p>
+              <img
+                src="./assets/web.png"
+                alt="Project 2"
+                class="modal-img"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="details-container2 color-container">
+          <div class="article-container project">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Docker_logo.svg/1920px-Docker_logo.svg.png"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Dockerized-Django-Web-Application-with-MySQL
+          </h2>
+          <div class="btn-container">
+            <button
+              class="btn project-btn"
+              onclick="openFullscreenModal('modal4')"
+            >
+              View Details
+            </button>
+            <!-- <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Rakesh-Deshalli-Ravi/Deforestation-Monitoring-System'"
+            >
+              Github
+            </button> -->
+            <!-- <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Live Demo
+            </button> -->
+          </div>
+        </div>
+
+        <!-- Modal for Project Two -->
+        <div id="modal4" class="fullscreen-modal">
+          <div class="fullscreen-modal-content">
+            <span class="close" onclick="closeFullscreenModal('modal4')"
+              >&times;</span
+            >
+            <div class="modal-body">
+              <h1>cDockerized-Django-Web-Application-with-MySQL</h1>
+              <p>
+                This project sets up a Django web application with a MySQL database using Docker and Docker Compose, ensuring efficient management of backend services and database configurations.
+
+Key Steps:
+Pre-requisites: Install Docker and Docker Compose and have a Django/Python application (GitHub Repo).
+
+Project Structure: Organizes backend, database, and configuration files efficiently.
+
+Dockerfile Creation: Defines dependencies and environment for Django.
+
+Database Configuration: Modifies settings.py to use environment variables for MySQL.
+
+MySQL Initialization: Uses mysql.sql to set up the database schema.
+
+Docker Compose: Manages multi-container deployment (docker-compose.yml).
+
+Deployment: Runs with docker-compose up --build -d.
+
+Testing: Access the application at http://<IP-Address>:8000 and verify database entries using MySQL commands.
+
+Conclusion:
+This setup fully containerizes the Django application, enabling easy deployment, scalability, and efficient database management. 🚀 
+              </p>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Docker_logo.svg/1920px-Docker_logo.svg.png  "
+                alt="Project 2"
+                class="modal-img"
+              />
+            </div>
+          </div>
+        </div>  
+      <span style="display: flex; justify-content: center">
+        <p>
+          In my free time, I continue to work on personal projects and have many
+          ideas just waiting to be realized.
+        </p>
+      </span>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#blog'"
+      /> -->
+    </section>
+
+ 
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+    
+      <!-- Contact Info -->
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:varunsimha90@gmail.com">varunsimha90@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/varunsimha-m-p-2a90591b5/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/github.png" alt="Github icon" class="icon contact-icon" />
+          <p><a href="https://github.com/varunsimha-MP">GitHub</a></p>
+        </div>
+      </div>
+    
+      <!-- Contact Form -->
+      <div class="contact-form-container">
+        <form id="contact-form">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <input type="text" id="title" placeholder="Subject" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-color-1">Send</button> <p id="form-status"></p> <!-- Status Message -->
+        </form>
+      </div>
+    </section>
+    
+    <!-- Load EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    
+    
+    
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Varunsimha M P. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
